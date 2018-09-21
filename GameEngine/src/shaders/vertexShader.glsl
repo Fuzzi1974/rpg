@@ -5,7 +5,7 @@ in vec2 textureCoordinates;
 
 out vec2 passThroughTextureCoords;
 
-
+uniform mat4 transformationMatrix;
 
 void main(void) {
 
