@@ -6,6 +6,7 @@ import org.lwjgl.opengl.GL15
 import org.lwjgl.opengl.GL20
 import org.lwjgl.opengl.GL30
 import java.nio.FloatBuffer
+import java.nio.IntBuffer
 
 
 class Loader {
@@ -14,15 +15,16 @@ class Loader {
     private var vbos = ArrayList<Int>()
 
 
-    fun loadToVAO(positions: FloatArray): RawModel {
+    fun loadToVAO(positions: FloatArray, indices: IntArray): RawModel {
         val vaoID = createVAO()
+        bindIndexBuffer(indices)
         vaos.add(vaoID)
         storeDataInAtttubutesList(0, positions)
         dismissVAO()
-        return RawModel(vaoID, positions.count() / 3)
+        return RawModel(vaoID, indices.count())
     }
 
-    fun free() {
+    fun dismiss() {
         for (vao in vaos) {
             GL30.glDeleteVertexArrays(vao)
         }
@@ -34,13 +36,13 @@ class Loader {
 
     private fun createVAO(): Int {
         val vaoId = GL30.glGenVertexArrays()
-        GL30.glBindVertexArray(vaoId);
+        GL30.glBindVertexArray(vaoId)
         return vaoId
     }
 
 
     private fun storeDataInAtttubutesList(attributeNumner: Int, data: FloatArray) {
-        val vboId = GL15.glGenBuffers();
+        val vboId = GL15.glGenBuffers()
         vbos.add(vboId)
         GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, vboId)
         val buffer = storeDataInFloatBuffer(data)
@@ -56,8 +58,25 @@ class Loader {
     }
 
 
+    private fun bindIndexBuffer(indices: IntArray) {
+        val vboId = GL15.glGenBuffers()
+        vbos.add(vboId)
+        GL15.glBindBuffer(GL15.GL_ELEMENT_ARRAY_BUFFER, vboId)
+        val buffer = storeDataInIntBuffer(indices)
+        GL15.glBufferData(GL15.GL_ELEMENT_ARRAY_BUFFER, buffer, GL15.GL_STATIC_DRAW)
+    }
+
+
+    private fun storeDataInIntBuffer(data: IntArray): IntBuffer {
+        val buffer = BufferUtils.createIntBuffer(data.count())
+        buffer.put(data)
+        buffer.flip()
+        return buffer
+    }
+
+
     private fun storeDataInFloatBuffer(data: FloatArray): FloatBuffer {
-        var buffer = BufferUtils.createFloatBuffer(data.count())
+        val buffer = BufferUtils.createFloatBuffer(data.count())
         buffer.put(data)
         buffer.flip()
         return buffer
