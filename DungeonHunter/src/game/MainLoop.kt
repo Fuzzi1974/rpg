@@ -1,9 +1,10 @@
 package game
 
-import jdk.dynalink.beans.StaticClass
+import models.TexturedModel
 import org.lwjgl.glfw.GLFW
 import renderEngine.*
 import shaders.StaticShader
+import texture.ModelTexture
 
 
 fun main(args: Array<String>) {
@@ -26,12 +27,21 @@ fun main(args: Array<String>) {
             3, 1, 2
     )
 
-    val model = loader.loadToVAO(vertices, indices)
+    val textureCoords = floatArrayOf(
+        0f, 0f,
+        0f, 1f,
+        1f, 1f ,
+        1f, 0f
+    )
+
+    val model = loader.loadToVAO(vertices, textureCoords, indices)
+    val texture = ModelTexture(loader.loadTexture("pebbles"))
+    val texturedModel = TexturedModel(model, texture)
 
     while (!GLFW.glfwWindowShouldClose(displayId)) {
         renderer.init()
         shader.launch()
-        renderer.render(model)
+        renderer.render(texturedModel)
         shader.terminate()
         updateDisplay()
     }

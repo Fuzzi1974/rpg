@@ -6,6 +6,7 @@ class StaticShader() : ShaderProgram("src/shaders/vertexShader.glsl",
 
     override fun bindAttributes() {
         super.bindAttribute(0, "position")
+        super.bindAttribute(1, "textureCoords")
     }
 
 

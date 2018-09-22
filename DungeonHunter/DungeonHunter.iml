@@ -9,5 +9,15 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="KotlinJavaRuntime (2)" level="project" />
     <orderEntry type="library" exported="" name="lwjgl" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/TWL" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/TWL" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

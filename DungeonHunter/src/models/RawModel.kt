@@ -1,4 +1,4 @@
-package renderEngine
+package models
 
 class RawModel(vaoId: Int, vertexCount: Int) {
 

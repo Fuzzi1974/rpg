@@ -1,10 +1,12 @@
 #version 400 core
 
-in vec3 color;
+in vec2 passTextureCoords;
 
 out vec4 finalizedColor;
 
+uniform sampler2D textureSampler;
+
 
 void main(void) {
-    finalizedColor = vec4(color, 0.8);
-}
+    finalizedColor = texture(textureSampler, passTextureCoords);
+ }
