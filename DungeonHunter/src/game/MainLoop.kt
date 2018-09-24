@@ -1,10 +1,12 @@
 package game
 
+import entities.Entity
 import models.TexturedModel
 import org.lwjgl.glfw.GLFW
 import renderEngine.*
 import shaders.StaticShader
 import texture.ModelTexture
+import utils.Vector3f
 
 
 fun main(args: Array<String>) {
@@ -38,10 +40,14 @@ fun main(args: Array<String>) {
     val texture = ModelTexture(loader.loadTexture("pebbles"))
     val texturedModel = TexturedModel(model, texture)
 
+    val entity = Entity(texturedModel, Vector3f(0f, 0f, 0f), 0f, 0f, 0f, 1f)
+
     while (!GLFW.glfwWindowShouldClose(displayId)) {
+        //entity.translatePosition(0.002f, 0f, 0f)
+        //entity.increaseRotation(0f, 1f, 0f)
         renderer.init()
         shader.launch()
-        renderer.render(texturedModel)
+        renderer.render(entity, shader)
         shader.terminate()
         updateDisplay()
     }
