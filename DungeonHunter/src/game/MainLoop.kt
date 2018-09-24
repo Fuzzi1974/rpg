@@ -14,8 +14,8 @@ fun main(args: Array<String>) {
     createDisplay()
 
     val loader = Loader()
-    val renderer = Renderer()
     val shader = StaticShader()
+    val renderer = Renderer(shader)
 
     val vertices = floatArrayOf(
             -0.5f, 0.5f, 0f,
@@ -40,10 +40,10 @@ fun main(args: Array<String>) {
     val texture = ModelTexture(loader.loadTexture("pebbles"))
     val texturedModel = TexturedModel(model, texture)
 
-    val entity = Entity(texturedModel, Vector3f(0f, 0f, 0f), 0f, 0f, 0f, 1f)
+    val entity = Entity(texturedModel, Vector3f(0f, 0f, -2.5f), 0f, 0f, 0f, 1f)
 
     while (!GLFW.glfwWindowShouldClose(displayId)) {
-        //entity.translatePosition(0.002f, 0f, 0f)
+        //entity.translatePosition(0f, 0f, -0.2f)
         //entity.increaseRotation(0f, 1f, 0f)
         renderer.init()
         shader.launch()
