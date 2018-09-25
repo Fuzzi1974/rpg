@@ -1,7 +1,9 @@
 package shaders
 
-import org.lwjgl.ovr.OVRMatrix4f
+import entities.Camera
 import utils.Matrix4f
+import utils.createViewMatrix
+
 
 class StaticShader() : ShaderProgram("src/shaders/vertexShader.glsl",
         "src/shaders/fragmentShader.glsl") {
@@ -12,6 +14,10 @@ class StaticShader() : ShaderProgram("src/shaders/vertexShader.glsl",
     var locationProjectionMatrix: Int = 0
         private set
 
+    var locationViewMatrix: Int = 0
+        private set
+
+
     override fun bindAttributes() {
         super.bindAttribute(0, "position")
         super.bindAttribute(1, "textureCoords")
@@ -21,6 +27,7 @@ class StaticShader() : ShaderProgram("src/shaders/vertexShader.glsl",
     override fun getAllUniformLocations() {
         locationTransformationMatrix = super.getUnifomLocation("transformationMatrix")
         locationProjectionMatrix = super.getUnifomLocation("projectionMatrix")
+        locationViewMatrix = super.getUnifomLocation("viewMatrix")
     }
 
 
@@ -31,5 +38,11 @@ class StaticShader() : ShaderProgram("src/shaders/vertexShader.glsl",
 
     fun loadProjectionMatrix(projection: Matrix4f) {
         super.loadMatrix(locationProjectionMatrix, projection)
+    }
+
+
+    fun loadViewMatrix(camera: Camera) {
+        val view = createViewMatrix(camera)
+        super.loadMatrix(locationViewMatrix, view)
     }
 }

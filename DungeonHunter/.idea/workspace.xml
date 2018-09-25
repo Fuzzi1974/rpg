@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dc8d1bb-2675-4516-9178-425c1effba31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/Camera.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input/Keyboard.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/lib/jar/lwjgl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/lib/jar/lwjgl_util.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/lib/jar/slick-util.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/res/pebbles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/game/MainGameLoop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/models/RawModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/models/TexturedModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/renderEngine/DisplayManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/renderEngine/Loader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/renderEngine/Renderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/shaders/ShaderProgram.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/shaders/StaticShader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/shaders/fragmentShader.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/shaders/vertexShader.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameEngine/src/textures/ModelTexture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Camera.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Camera.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/MainLoop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/MainLoop.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderEngine/Renderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Renderer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shaders/StaticShader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/StaticShader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shaders/vertexShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertexShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Maths.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Maths.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,29 +30,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="glsl" value="9" />
+          <entry key="glsl" value="10" />
           <entry key="java" value="1" />
-          <entry key="kt" value="51" />
+          <entry key="kt" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="glsl" value="554" />
-          <entry key="kt" value="11734" />
+          <entry key="glsl" value="586" />
+          <entry key="kt" value="13064" />
           <entry key="txt" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="GLSL shader file" value="9" />
+          <entry key="GLSL shader file" value="10" />
           <entry key="JAVA" value="1" />
-          <entry key="Kotlin" value="51" />
+          <entry key="Kotlin" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="GLSL shader file" value="554" />
-          <entry key="Kotlin" value="11734" />
+          <entry key="GLSL shader file" value="586" />
+          <entry key="Kotlin" value="13064" />
           <entry key="PLAIN_TEXT" value="54" />
         </counts>
       </usages-collector>
@@ -74,23 +61,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/MainLoop.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+            <state relative-caret-position="434">
+              <caret line="111" column="47" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
               <folding>
-                <element signature="e#14#191#0" expanded="true" />
+                <element signature="e#14#382#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/entities/Camera.kt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Maths.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="95" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shaders/vertexShader.glsl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderEngine/DisplayManager.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#22#117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/Camera.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+              <folding>
+                <element signature="e#19#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shaders/StaticShader.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="e#17#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input/Keyboard.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <folding>
+                <element signature="e#15#79#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,8 +153,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -123,14 +176,15 @@
         <option value="$PROJECT_DIR$/src/utils/FloatBufferExtensions.kt" />
         <option value="$PROJECT_DIR$/src/utils/Vector3f.kt" />
         <option value="$PROJECT_DIR$/src/entities/Entity.kt" />
-        <option value="$PROJECT_DIR$/src/utils/Maths.kt" />
         <option value="$PROJECT_DIR$/src/shaders/ShaderProgram.kt" />
         <option value="$PROJECT_DIR$/src/utils/Matrix4f.kt" />
+        <option value="$PROJECT_DIR$/src/input/Keyboard.kt" />
         <option value="$PROJECT_DIR$/src/shaders/vertexShader.glsl" />
         <option value="$PROJECT_DIR$/src/shaders/StaticShader.kt" />
+        <option value="$PROJECT_DIR$/src/utils/Maths.kt" />
+        <option value="$PROJECT_DIR$/src/entities/Camera.kt" />
         <option value="$PROJECT_DIR$/src/renderEngine/Renderer.kt" />
         <option value="$PROJECT_DIR$/src/game/MainLoop.kt" />
-        <option value="$PROJECT_DIR$/src/entities/Camera.kt" />
       </list>
     </option>
   </component>
@@ -161,6 +215,36 @@
             </path>
             <path>
               <item name="DungeonHunter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DungeonHunter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DungeonHunter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DungeonHunter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DungeonHunter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DungeonHunter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="renderEngine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DungeonHunter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DungeonHunter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DungeonHunter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DungeonHunter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DungeonHunter" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -172,7 +256,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/git/rpg/DungeonHunter/src/game/MainLoop.kt" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537817192019" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537874981285" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/TWL" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -241,7 +325,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -250,7 +334,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49520257" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49520257" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -385,26 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Maths.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#15#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/DisplayManager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#22#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Matrix4f.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -412,47 +476,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.kt">
+    <entry file="file://$PROJECT_DIR$/src/renderEngine/DisplayManager.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="559">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
-            <element signature="e#22#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/MainLoop.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
-          <folding>
-            <element signature="e#14#191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/StaticShader.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-          <folding>
-            <element signature="e#17#71#0" expanded="true" />
+            <element signature="e#22#117#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shaders/vertexShader.glsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="221">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input/Keyboard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#15#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Maths.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="95" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/Camera.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="612">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="e#19#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shaders/StaticShader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#17#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/MainLoop.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="111" column="47" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
+          <folding>
+            <element signature="e#14#382#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
